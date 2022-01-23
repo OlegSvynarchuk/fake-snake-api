@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "api for snake",
+  "main": "index.js",
+  "engines": {
+    "node": "11.11",
+    "npm": "6.7"
+    },
+  "scripts": {
+    "start": "nodemon -w index.js -w .env index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oleg",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.1.0",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
+  }
+}
