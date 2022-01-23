@@ -10,9 +10,8 @@ const dbConfig = {
     database: process.env.PG_DATABASE
 }
 
-const prodDbConfig = {
-    connectionString: process.env.DATABASE_URL
-}
+const prodDbConfig = process.env.DATABASE_URL
+
 
 
 const pool = new Pool(
