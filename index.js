@@ -15,6 +15,7 @@ app.use('/', require('./routes/login.js'))
 app.use('/', require('./routes/verifyplayer.js'))
 app.use('/', require('./routes/updatescore.js'))
 app.use('/', require('./routes/gettopscores.js'))
+app.use('/', require('./routes/testroute.js'))
 
 const PORT = process.env.PORT ||  8000
 
