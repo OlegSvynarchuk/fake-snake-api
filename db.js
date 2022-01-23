@@ -14,8 +14,8 @@ const prodDbConfig = process.env.DATABASE_URL
 
 
 
-const pool = new Pool(
-    process.env.NODE_ENV === 'production' ? prodDbConfig : dbConfig
-    )
+const pool = new Pool({
+    connectionString: process.env.NODE_ENV === 'production' ? prodDbConfig : dbConfig
+})
 
 module.exports = pool
