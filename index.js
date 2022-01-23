@@ -16,7 +16,7 @@ app.use('/', require('./routes/verifyplayer.js'))
 app.use('/', require('./routes/updatescore.js'))
 app.use('/', require('./routes/gettopscores.js'))
 
-const PORT = process.env ||  8000
+const PORT = process.env.PORT ||  8000
 
 app.listen(PORT, () => {
     console.log('snake api running')
